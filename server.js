@@ -13,7 +13,9 @@ app.get("/", (req, res) => {
 
   // res.download("package.json");
 
-  res.render("index");
+  res.render("index", {
+    textz: "World",
+  });
   // res.send("Hello");
 });
 
