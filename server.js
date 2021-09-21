@@ -19,4 +19,6 @@ app.get("/", (req, res) => {
   // res.send("Hello");
 });
 
+const userRouter = require('./routes/users')
+app.use('/users', userRouter)
 app.listen(3000);
